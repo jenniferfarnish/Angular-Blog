@@ -1,0 +1,10 @@
+<div>
+    <h2>{{ post.title }}</h2>
+    <p>Author: {{ post.firstname }} {{ post.lastname }}</p>
+    <p>Category: {{ post.categoryname }}
+    <p>{{ post.content}}</p>
+    <p>{{ post.createdate | date:'short' }}</p>
+    <button ng-click="deletePost()">Delete</button>
+    <button ng-click="goToUpdate()">Edit</button>
+</div>
+<a href="/">Return to Posts</a>

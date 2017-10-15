@@ -1,0 +1,8 @@
+ <button ng-click="goToCompose()">Compose a Post</button>
+ <div class="post" ng-repeat="post in posts">
+    <h2>{{ post.title }}</h2>
+    <p>Author: {{ post.authorfirstname }} {{ post.authorlastname }}</p>
+    <p>Category: {{ post.categoryname }}</p>
+    <p>{{ post.createdate | date:'short' }}</p>
+    <a ng-href="{{ post.id }}">Read</a>
+</div>
